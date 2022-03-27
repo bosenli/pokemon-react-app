@@ -1,11 +1,15 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { CLIENT_URL } from '../services/constants';
+import { CLIENT_URL } from '../services/constants';  //to hide api key we use next line after setting up env file and .gitignore file
+//import dotenv from 'dotenv'   // related to line 5, 12 
+//dotenv.config()
 import Pokemon from '../components/Pokemon';
 
 function PokeList() {
 
   const [pokemons, setPokemons] = useState([]) //empty array
+
+  //let client_url = process.env.CLIENT_URL
 
   useEffect(() => {
 

@@ -1,4 +1,7 @@
 import './App.css';
+import Header from './components/Header'
+import PokeList from './components/PokeList';
+
 // import materialize third party library in Public folder index.html 
 
 
@@ -13,7 +16,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-     
+      <Header />
+      <PokeList />
     </div>
   );
 }
